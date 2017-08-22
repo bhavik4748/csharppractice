@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPractice", "CSharpPra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsWithDefaultKeyWord", "GenericsWithDefaultKeyWord\GenericsWithDefaultKeyWord.csproj", "{F76B3B06-3836-4A05-9E6A-A4C18365D28D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F76B3B06-3836-4A05-9E6A-A4C18365D28D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F76B3B06-3836-4A05-9E6A-A4C18365D28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F76B3B06-3836-4A05-9E6A-A4C18365D28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F76B3B06-3836-4A05-9E6A-A4C18365D28D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
