@@ -29,6 +29,15 @@ namespace LINQExamples
 
             Console.WriteLine("Total count:{0}" , testQuery);
 
+
+            IEnumerable<string> testQuery1 =
+              from a in arr
+              where a > 35
+              select String.Format("Query Result: {0} ", a);
+
+
+            Console.WriteLine("Total count:{0}", testQuery1.Count());
+
             Console.ReadLine();
 
         }
