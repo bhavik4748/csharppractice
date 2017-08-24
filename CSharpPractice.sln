@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericsWithDefaultKeyWord", "GenericsWithDefaultKeyWord\GenericsWithDefaultKeyWord.csproj", "{F76B3B06-3836-4A05-9E6A-A4C18365D28D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQExamples", "LINQExamples\LINQExamples.csproj", "{4A8C5003-A3C4-41E8-B1F4-220240B5EBD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F76B3B06-3836-4A05-9E6A-A4C18365D28D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F76B3B06-3836-4A05-9E6A-A4C18365D28D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F76B3B06-3836-4A05-9E6A-A4C18365D28D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A8C5003-A3C4-41E8-B1F4-220240B5EBD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8C5003-A3C4-41E8-B1F4-220240B5EBD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8C5003-A3C4-41E8-B1F4-220240B5EBD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8C5003-A3C4-41E8-B1F4-220240B5EBD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
