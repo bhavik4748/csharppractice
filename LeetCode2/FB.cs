@@ -68,7 +68,7 @@ namespace LeetCode2
                     c2 = true;
                 }
 
-                if (A[i1].start <= B[i2].start && A[ii].end <= B[i2].end)
+                if (A[i1].start <= B[i2].start && A[i1].end <= B[i2].end)
                 {
                     temp.start = B[i1].start;
                     temp.end =A[i1].end;                  
