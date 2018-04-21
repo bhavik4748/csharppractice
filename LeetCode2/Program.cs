@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace LeetCode2
 {
@@ -62,12 +63,29 @@ namespace LeetCode2
             B.next.next = new ListNode(4);
 
             ListNode r = MergeTwoLists(A, B);
-            while(r != null)
+            while (r != null)
             {
                 Console.WriteLine(r.val);
                 r = r.next;
             }
-           // Console.WriteLine(r);
+
+
+            AverageLevelsInBinaryTree t = new AverageLevelsInBinaryTree();
+            t.root = new AverageLevelsInBinaryTree.TreeNode(3);
+            t.root.left = new AverageLevelsInBinaryTree.TreeNode(3);
+            t.root.left.left = new AverageLevelsInBinaryTree.TreeNode(2);
+            t.root.right = new AverageLevelsInBinaryTree.TreeNode(20);
+            t.root.right.left = new AverageLevelsInBinaryTree.TreeNode(15);
+            t.root.right.right = new AverageLevelsInBinaryTree.TreeNode(7);
+
+            IList<double> l = t.AverageOfLevels(t.root);
+
+            Console.WriteLine("************************************");
+            Console.Write("AverageLevelsInBinaryTree= ");
+            foreach (var obj in l)
+                Console.Write(obj + " ");
+
+            // Console.WriteLine(r);
             Console.ReadLine();
             // Console.WriteLine("Hello World!");
         }
