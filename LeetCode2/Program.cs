@@ -50,9 +50,24 @@ namespace LeetCode2
         static void Main(string[] args)
         {
 
-            bool res = IsValidStr("(]");
+            //   bool res = IsValidStr("(]");
 
-            Console.WriteLine(res);
+
+            ListNode A = new ListNode(1);
+            A.next = new ListNode(2);
+            A.next.next = new ListNode(4);
+
+            ListNode B = new ListNode(1);
+            B.next = new ListNode(3);
+            B.next.next = new ListNode(4);
+
+            ListNode r = MergeTwoLists(A, B);
+            while(r != null)
+            {
+                Console.WriteLine(r.val);
+                r = r.next;
+            }
+           // Console.WriteLine(r);
             Console.ReadLine();
             // Console.WriteLine("Hello World!");
         }
