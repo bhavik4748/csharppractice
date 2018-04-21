@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2011
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPractice", "CSharpPractice\CSharpPractice.csproj", "{69EB7AEE-F09A-4FE8-905B-AB5213F152E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Leetcode", "Leetcode\Leetcode.csproj", "{61543D06-E231-4CA3-8664-7458FCB492F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode2", "LeetCode2\LeetCode2.csproj", "{63AE8B79-2BD2-4DB9-9A50-460B91912AE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +25,19 @@ Global
 		{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F8BA764-0181-46B8-9E8E-DF1F29CFBD09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61543D06-E231-4CA3-8664-7458FCB492F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61543D06-E231-4CA3-8664-7458FCB492F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61543D06-E231-4CA3-8664-7458FCB492F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61543D06-E231-4CA3-8664-7458FCB492F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63AE8B79-2BD2-4DB9-9A50-460B91912AE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63AE8B79-2BD2-4DB9-9A50-460B91912AE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63AE8B79-2BD2-4DB9-9A50-460B91912AE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63AE8B79-2BD2-4DB9-9A50-460B91912AE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A7B794F2-BE2B-40ED-B38B-B28E96FC15CB}
 	EndGlobalSection
 EndGlobal
