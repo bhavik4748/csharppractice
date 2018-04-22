@@ -36,9 +36,9 @@ namespace LeetCode2
         }
 
         public TreeNode root;
-        public  AverageLevelsInBinaryTree()
+        public AverageLevelsInBinaryTree()
         {
-             root = null;
+            root = null;
         }
 
         public void Insert(int val)
@@ -81,5 +81,7 @@ namespace LeetCode2
             return l;
 
         }
+
+        
     }
 }

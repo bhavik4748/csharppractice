@@ -48,6 +48,32 @@ namespace LeetCode2
             return false;
         }
 
+        /*
+         * The Hamming distance between two integers is the number of positions at which the corresponding bits are different.
+
+            Given two integers x and y, calculate the Hamming distance.
+
+                Note:
+                0 ≤ x, y < 2^31.
+         * 
+         * 
+         */
+
+
+        public static int HammingDistance(int x, int y)
+        {
+            int diff = x ^ y;
+            char[] s = Convert.ToString(diff, 2).ToCharArray();
+            int distance = 0;
+            for (int i = 0; i < s.Length; ++i)
+            {
+                if (s[i] == '1')
+                    ++distance;
+            }
+            return distance;
+        }
+
+
         static void Main(string[] args)
         {
 
@@ -68,6 +94,8 @@ namespace LeetCode2
                 Console.WriteLine(r.val);
                 r = r.next;
             }
+
+            int HResult = HammingDistance(4, 14);
 
 
             AverageLevelsInBinaryTree t = new AverageLevelsInBinaryTree();
