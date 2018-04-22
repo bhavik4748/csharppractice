@@ -77,8 +77,9 @@ namespace LeetCode2
         static void Main(string[] args)
         {
 
+            int[] aaa = new int[] { 1, 2, 3 };
             //   bool res = IsValidStr("(]");
-
+            bool rr= CheckSubarraySum(aaa, 5);
 
             ListNode A = new ListNode(1);
             A.next = new ListNode(2);
