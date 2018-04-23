@@ -6,6 +6,51 @@ namespace LeetCode2
 {
     partial class Program
     {
+
+        public static string AddBinary(string a, string b)
+        {
+            // int a1= Convert.ToInt32(a,2);
+            //  int b1= Convert.ToInt32(b,2);
+
+            // int r=a1+b1;
+
+            // return Convert.ToString(r,2);
+            char[] a1, b1;
+            if (a.Length > b.Length)
+            {
+                a1 = a.ToCharArray();
+                b1 = b.ToCharArray();
+            }
+            else
+            {
+                a1 = b.ToCharArray();
+                b1 = a.ToCharArray();
+            }
+            string r = "";
+
+            int carry = 0;
+            int i = a1.Length - 1;
+            int j = b1.Length - 1;
+            while (i > -1 && j > -1)
+            {
+                int sum = (int.Parse(a1[i].ToString())  + int.Parse(b1[j].ToString())  + carry);
+                carry = sum / 2;
+                r = Convert.ToString(sum % 2) + r;
+                --i;
+                --j;
+            }
+
+            while (i > -1)
+            {
+                int sum = (int.Parse(a1[i].ToString()) + carry);
+                carry = sum / 2;
+                r = Convert.ToString(sum % 2) + r;
+                --i;
+            }
+            return carry == 1? "1"+ r:r;
+        }
+
+
         /*
          *Given an array nums, write a function to move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
@@ -18,6 +63,8 @@ Minimize the total number of operations.
 
         public static void MoveZeroes(int[] nums)
         {
+
+            string z = AddBinary("1010", "1011");
 
             int j = 0; bool flag = false;
             while (j < nums.Length)
