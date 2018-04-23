@@ -33,7 +33,7 @@ namespace LeetCode2
             int j = b1.Length - 1;
             while (i > -1 && j > -1)
             {
-                int sum = (int.Parse(a1[i].ToString())  + int.Parse(b1[j].ToString())  + carry);
+                int sum = (int.Parse(a1[i].ToString()) + int.Parse(b1[j].ToString()) + carry);
                 carry = sum / 2;
                 r = Convert.ToString(sum % 2) + r;
                 --i;
@@ -47,7 +47,7 @@ namespace LeetCode2
                 r = Convert.ToString(sum % 2) + r;
                 --i;
             }
-            return carry == 1? "1"+ r:r;
+            return carry == 1 ? "1" + r : r;
         }
 
 
@@ -100,7 +100,7 @@ Minimize the total number of operations.
             Stack st = new Stack();
 
             char[] input = s.ToCharArray();
-
+            
             for (int i = 0; i < input.Length; ++i)
             {
                 switch (input[i])
@@ -164,6 +164,10 @@ Minimize the total number of operations.
 
         static void Main(string[] args)
         {
+            bool a1 = ValidPalindrome("eccer");
+
+            int[] sss = new int[] { -1, 0, 1, 2, -1, -4 };
+            IList<IList<int>> ans = ThreeSum(sss);
 
             int[] MoveZeroes1 = new int[] { 0, 1, 0, 3, 12 };
             MoveZeroes(MoveZeroes1);
