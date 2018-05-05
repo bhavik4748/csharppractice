@@ -41,9 +41,7 @@ A solution set is:
                 for (int j = i + 1; j < nums.Length - 1; ++j)
                 {
 
-                    if (j > i + 1 && nums[j] == nums[j - 1]) continue;
-
-                    List<int> l = new List<int>();
+                    if (j > i + 1 && nums[j] == nums[j - 1]) continue;                 
 
                     var t = 0 - nums[i] - nums[j];
                     if (t > nums[j] && h.Contains(t)) res.Add(new[] { nums[i], nums[j], t });
