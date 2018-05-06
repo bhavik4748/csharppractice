@@ -100,7 +100,7 @@ Minimize the total number of operations.
             Stack st = new Stack();
 
             char[] input = s.ToCharArray();
-            
+
             for (int i = 0; i < input.Length; ++i)
             {
                 switch (input[i])
@@ -164,6 +164,9 @@ Minimize the total number of operations.
 
         static void Main(string[] args)
         {
+            int rres = MinSubArrayLen(7, new int[] { 2, 3, 1, 2, 4, 3 });
+
+
             bool a1 = ValidPalindrome("eccer");
 
             int[] sss = new int[] { -1, 0, 1, 2, -1, -4 };
