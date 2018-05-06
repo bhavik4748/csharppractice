@@ -21,40 +21,33 @@ Note:
 The string will only contain lowercase characters a-z. The maximum length of the string is 50000. 
          * 
          * */
-        public static bool ValidPalindrome(string s)
+        public bool ValidPalindrome(string s)
         {
-            // s = "aguokepatgbnvfqmgmlcupuufxoohdfpgjdmysgvhmvffcnqxjjxqncffvmhvgsymdjgpfdhooxfuupuculmgmqfvnbgtapekouga";
-            char[] c = s.ToCharArray();
-            int odd = c.Length % 2;
-            int j = c.Length - 1;
-            int skip = 0;
-            for (int i = 0; i < c.Length / 2; ++i)
-            {
-                if (c[i] == c[j])
-                    --j;
-                else
-                {
-                    if (i > -1 && i < c.Length / 2 && skip == 0)
-                    {
-                        if ((c[i + 1] == c[j]))
-                        {
-                            ++i;
-                            --j;
-                        }
-                        else if (c[i] == c[j - 1])
-                            j = j - 2;
-                        else
-                            return false;
-                        ++skip;
-                    }
 
+            char[] c = s.ToCharArray();
+            int j = c.Length - 1;
+            for (int i = 0; i < j; ++i)
+            {
+                if (c[i] != c[j])
+                {
+                    if (helperValidPalindrome(c, i + 1, j) || helperValidPalindrome(c, i, j - 1))
+                        return true;
                     else
                         return false;
                 }
-                //  if(skip == 0 ) ++ skip;
-                //   else return false;
+                --j;
             }
+            return true;
+        }
 
+        public static bool helperValidPalindrome(char[] c, int i, int j)
+        {
+            int k;
+            for (k = i; k <= i + (j - i) / 2; ++k)
+            {
+                if (c[k] != c[j - k + i])
+                    return false;
+            }
             return true;
         }
     }
