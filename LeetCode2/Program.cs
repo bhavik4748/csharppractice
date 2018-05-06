@@ -164,10 +164,13 @@ Minimize the total number of operations.
 
         static void Main(string[] args)
         {
+            IList<IList<int>> l = Subsets(new int[]{ 1, 2, 3 });
+
+
             int rres = MinSubArrayLen(7, new int[] { 2, 3, 1, 2, 4, 3 });
 
 
-            bool a1 = ValidPalindrome("eccer");
+         //   bool a1 = ValidPalindrome("eccer");
 
             int[] sss = new int[] { -1, 0, 1, 2, -1, -4 };
             IList<IList<int>> ans = ThreeSum(sss);
@@ -205,7 +208,7 @@ Minimize the total number of operations.
             t.root.right.left = new AverageLevelsInBinaryTree.TreeNode(15);
             t.root.right.right = new AverageLevelsInBinaryTree.TreeNode(7);
 
-            IList<double> l = t.AverageOfLevels(t.root);
+        //    IList<double> l = t.AverageOfLevels(t.root);
 
             Console.WriteLine("************************************");
             Console.Write("AverageLevelsInBinaryTree= ");
